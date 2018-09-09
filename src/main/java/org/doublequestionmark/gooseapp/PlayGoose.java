@@ -66,7 +66,7 @@ public class PlayGoose {
     shortMatcher = shortPattern.matcher(command);
     longMatcher = longPattern.matcher(command);
     
-    if (shortMatcher.find()) { //"move Pippo" found
+    if (shortMatcher.find()) { //"move Bob" found
         
       player = shortMatcher.group(2);
       
@@ -88,7 +88,7 @@ public class PlayGoose {
     
     }
     
-    else if (longMatcher.find()) { //"move Pippo x, y" found
+    else if (longMatcher.find()) { //"move Bob x, y" found
         
       player = longMatcher.group(2);
       

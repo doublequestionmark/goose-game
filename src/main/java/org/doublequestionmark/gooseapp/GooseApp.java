@@ -18,12 +18,12 @@ public class GooseApp {
   
   public GooseApp() {
       
-    input = new Scanner(System.in);
+    input = new Scanner(System.in); //read from standard input
     
     movePattern = "move ";
     playerPattern = "add player ";
     
-    players = new HashMap<String, Integer>();
+    players = new HashMap<String, Integer>(); //each element of the map -> (playerName, currentScore)
     
     startGame = false;
     
